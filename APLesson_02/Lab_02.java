@@ -23,7 +23,8 @@ public class Lab_02
 		int h=4;
 		int SA=2*l*w+2*l*h+2*h*w;
 		System.out.println("The Surface Area of your Rectangle is " + SA);
-		
+		System.out.println("a\tb\t\nd\te\tf\ng\th\ti");
+	
 
 
 	}	
