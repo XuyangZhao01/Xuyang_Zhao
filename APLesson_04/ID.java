@@ -22,18 +22,17 @@ public class ID
 			String year = kb.nextLine();
 			System.out.println("Subject:");
 			String subject = kb.nextLine();
-			
-			System.out.println("**********************");
+			System.out.println("***********************");
 			ID.format(School,year);
 			ID.format(Name1,Name2);
 			ID.format(title,subject);
-			
+			System.out.println("***********************");
 			
 		}
 		
 		public void format (String word, String word2)
 		{
-			System.out.printf("*\n%10s %10s*", word, word2);
+			System.out.printf("*%10s %10s*\n", word, word2);
 		}
 		
 		
