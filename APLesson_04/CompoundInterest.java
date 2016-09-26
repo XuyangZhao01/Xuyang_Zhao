@@ -14,15 +14,13 @@ public class CompoundInterest
 		System.out.println("How long will this loan last in years?");
 		double time = kb.nextDouble();
 		
-		rate.calculator(interest,principal,number,time);
-		
+		double total = rate.calculator(interest,principal,number,time);
+		System.out.printf("Your total payment per month for the loan will be: $%20.2f", total);
 	}
 	
-	public void calculator (double interest, double principal, double number, double time) 
+	public double calculator (double interest, double principal, double number, double time) 
 	{
-		double total = principal*Math.pow((1+(interest/number)),number*time);
-		System.out.printf("Your total loan amount including interest will be: $%20.2f", total);
-
+		return principal*(Math.pow(1+interest/number, number*time))/(12*time);
 	}
 	
 }
