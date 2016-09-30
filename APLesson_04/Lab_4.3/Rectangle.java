@@ -12,17 +12,17 @@ public class Rectangle
 		l = kb.nextDouble();
 		System.out.println("What is the width in feet?");
 		w = kb.nextDouble();
-		calcPerim();
+
 		print();
 		
 	}
-	public static void calcPerim()
+	public static double calcPerim()
 	{
-		perimeter = 2*l+2*w;
+		return 2*l+2*w;
 	}
 	public static void print ()
 	{
-		System.out.printf("Your rectangle is %.5f ft around.", perimeter);
+		System.out.printf("Your rectangle is %.5f ft around.", calcPerim());
 	}
 	
 }
