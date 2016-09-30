@@ -13,7 +13,8 @@ public class Lab_02
 		System.out.println("5 multiplied by 6 is " + e*f);
 		String Name="Xuyang Zhao ";
 		String Address="5598 Valerio Trail ";
-		String City="San Diego ";
+	
+		String City="\nSan Diego ";
 		String ZIP="92130";
 		System.out.println(Name);
 		System.out.println(Address + City + ZIP);
@@ -23,7 +24,7 @@ public class Lab_02
 		int h=4;
 		int SA=2*l*w+2*l*h+2*h*w;
 		System.out.println("The Surface Area of your Rectangle is " + SA);
-		System.out.println("a\tb\t\nd\te\tf\ng\th\ti");
+		System.out.println("a\tb\tc\nd\te\tf\ng\th\ti");
 	
 
 
