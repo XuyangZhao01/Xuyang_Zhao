@@ -4,7 +4,7 @@ public class Average
 	static double num1;
 	static double num2;
 	static double num3;
-	
+	static double numbers;
 	public static void main (String[]args)
 	{
 		Scanner kb = new Scanner(System.in); 
@@ -14,16 +14,16 @@ public class Average
 		num2 = kb.nextDouble();
 		System.out.println("What is your third number?");
 		num3 = kb.nextDouble();
-
+		avg();
 		print();
 	}
-	public static double avg()
+	public static void avg()
 	{
-		return (num1+num2+num3)/3;
+		numbers = (num1+num2+num3)/3;
 	}
 	
 	public static void print()
 	{
-		System.out.printf("Your average is %.5f", avg());
+		System.out.printf("Your average is %.5f", numbers);
 	}
 }
