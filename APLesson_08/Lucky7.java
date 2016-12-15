@@ -6,7 +6,7 @@ public class Lucky7
 		Scanner kb = new Scanner(System.in);
 		System.out.println("type number");
 		int number = kb.nextInt();
-		System.out.println("There is " +luck(number)+" seven in your number");
+		System.out.println("There are " +luck(number)+" sevens in your number");
 	}
 	public static int luck(int number)
 	{
