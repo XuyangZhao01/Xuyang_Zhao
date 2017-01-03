@@ -11,7 +11,7 @@ public class DigitAdder
 		number= kb.nextInt();
 		num=number;
 		sumDigits();
-		System.out.println("The sum of  " +num + sum);
+		System.out.println("The sum of them numbers is " +num + sum);
 	
 	}
 	public static void sumDigits()
