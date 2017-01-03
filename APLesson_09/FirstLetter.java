@@ -1,23 +1,25 @@
 import java.util.Scanner;
-public class FirstLetter
+
+public class firstLetter
 {
-	public static void main (String[]args)
+	public static void main(String[]args)
 	{
+		String [] words = new String[5];
 		Scanner kb = new Scanner(System.in);
-		String[] Words = new String [5];
-		System.out.println("What are the words?");
+		System.out.println("5 words");
 		
-		for (int i=0; i<Words.length;i++)
+		for(int i = 0; i < words.length; i++)
 		{
-			Words [i] = kb.next();
+			words[i] = kb.next();
 		}
-		first(Words);
+		
+		first(words);
 	}
-	public static void first(String [] Words)
+	public static void first(String[] words)
 	{
-		for (int i = 0; i< Words.length; i++)
+		for(String word : words)
 		{
-			System.out.println(Words[i].charAt(0));
+			System.out.println(word.charAt(0));
 		}
 	}
 }
