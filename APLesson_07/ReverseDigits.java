@@ -10,9 +10,10 @@ public class ReverseDigits
 	{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("What is your number?");
-		number = kb.nextInt();
+		num = kb.nextInt();
+		number = num;
 		returnNum();
-		System.out.println(number+" reversed is "+rev);
+		
 	}
 	public static void returnNum()
 	{
@@ -22,5 +23,6 @@ public class ReverseDigits
 			num/=10;
 			
 		}
+	System.out.println(number+" reversed is "+rev);
 	}
 }

@@ -1,23 +1,19 @@
 import java.util.Scanner;
-
-public class getOdds
-{
-	
+public class BiggestNumber
+{	
 	static int [] numbers = new int [10];
 	public static void main (String[]args)
 	{
 		fillArray();
-		System.out.println("For the following numbers... ");
+		System.out.println("For the numbers...");
 		printArray();
 		System.out.println();
-		System.out.println("The numbers " + Odds() + " are odd numbers.");
+		System.out.println("The biggest is..." + getBiggest());		
 	}
 	public static void fillArray()
 	{
-		for (int i = 0; i<numbers.length;i++)
-		{
-			numbers [i] = (int)(Math.random()*100)+1;
-		}
+		for(int i = 0; i < numbers.length; i++)
+		numbers[i] = (int)(Math.random()*100)+1;
 	}
 	public static void printArray()
 	{
@@ -26,18 +22,17 @@ public class getOdds
 			System.out.print(num + " ");
 		}
 		System.out.println();
-		
 	}
-	public static String Odds()
+	public static int getBiggest()
 	{
-		String odds = "";
+		int max = 0;
 		for ( int num : numbers)
 		{
-			if (num%2!=0)
+			if (num >= max)
 			{
-				odds += num + " ";
+				max = num;
 			}
 		}
-		return odds;
+		return max;
 	}
 }
