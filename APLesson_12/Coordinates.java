@@ -18,11 +18,11 @@ public class Coordinates
 		
 		int y2 = kb.nextInt();
 		
-		DistancePoints  = new Distance(x1, y1, x2, y2);
+		DistancePoints  = new DistancePoints(x1, y1, x2, y2);
 		
 		System.out.println("The distance from (" + object.getx1() + ", " + object.gety1() + ") to (" + object.getx2() + ", " + object.gety2() + ") is " + object.getDist());
 		
-		object.setCoordinates(3, 4, 5, 6);
+		object.setCoordinates(1, 2, 3, 4);
 		
 		System.out.println("The distance from (" + object.getx1() + ", " + object.gety1() + ") to (" + object.getx2() + ", " + object.gety2() + ") is " + object.getDist());
 		

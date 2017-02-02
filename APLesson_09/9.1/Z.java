@@ -4,7 +4,7 @@ public class Z
 	static String [] words = new String [5];
 	public static void main (String[]args)
 	{
-	
+		System.out.println("what are your 5 words");
 		fillArray();
 		printArray();
 		System.out.println("only " + hasZs() + " contain(s) the letter z");

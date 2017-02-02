@@ -8,7 +8,7 @@ public class UserClass
 	
 	private int userID;
 	
-	public void User(String f, String l)
+	public UserClass(String f, String l)
 	{
 		first = f;
 		
@@ -19,7 +19,7 @@ public class UserClass
 	userID = (int)(Math.random() * 1000000) + 1;
 	}
 	
-	public void  User(String f, String l, String av)
+	public  UserClass(String f, String l, String av)
 	{
 		first = f;
 		

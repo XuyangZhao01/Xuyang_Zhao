@@ -17,7 +17,7 @@ public class UserClassDriver
 		
 		if(choice.equals("n"))
 		{ 
-			User p1 = new User(first, last);
+			UserClass p1 = new UserClass(first, last);
 			System.out.println(p1);
 		}
 		if(choice.equals("y"))
@@ -25,7 +25,7 @@ public class UserClassDriver
 			System.out.println("Enter your avatar name");
 			String avatar = kb.next();
 			
-			User p2 = new User(first, last, avatar);
+			UserClass p2 = new UserClass(first, last, avatar);
 			System.out.println(p2);
 		}
 	}
