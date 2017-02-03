@@ -5,7 +5,7 @@ public class DistancePoints
 	private int x1, y1, x2, y2;
 
 	
-	public void Distance()
+	public DistancePoints()
 	{
 		distance = 0;
 		x1 = 0;
@@ -14,7 +14,7 @@ public class DistancePoints
 		y2 = 0;
 	}
 	
-	public void Distance(int x, int y, int xx, int yy)
+	public DistancePoints(int x, int y, int xx, int yy)
 	{
 		x1 = x;
 		y1 = y;
