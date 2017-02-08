@@ -3,7 +3,7 @@ public getMostFrequentType()
 	int cars = 0;
 	int figures = 0;
 	
-	for (toy:toys)
+	for (toy:toyList)
 	{
 		if (toy.equals ("Car"))
 		{
@@ -19,7 +19,7 @@ public getMostFrequentType()
 	{
 		return "Cars";
 	}
-	if (figures>cars)
+	else if (figures>cars)
 	{
 		return "Action Figures";
 	}
@@ -31,4 +31,18 @@ public getMostFrequentType()
 public String toString()
 {
 	return toyList();
+}
+public getMostFrequentToy()
+{
+	String name = "name";
+	int max =  int.MIN_VALUE ;
+	for (toy:toyList)
+	{
+		if (max<count.toy)
+		{
+			max=count;
+			name=name.toy;
+		}
+	}
+	return name;
 }
