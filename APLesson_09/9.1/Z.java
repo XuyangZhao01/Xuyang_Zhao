@@ -36,7 +36,9 @@ public class Z
 			if (word.indexOf("z")>=0)
 			{
 				z = z + " " + word;
+		
 			}
+			
 		}
 		return z;
 	}
