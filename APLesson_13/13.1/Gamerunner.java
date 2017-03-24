@@ -5,7 +5,7 @@ public class Gamerunner
 		XB xbox = new XB("XB");
 		System.out.println(xbox);
 		
-		PlayStation ps = new PlayStation("PlayStation");
+		PS ps = new PS("PS");
 		System.out.println(ps);
 		
 		PC pc = new PC("PC");

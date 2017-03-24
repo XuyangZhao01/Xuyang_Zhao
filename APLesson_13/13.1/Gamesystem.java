@@ -1,4 +1,4 @@
-public class Gamesystem
+public class GameSystem
 {
 	private String platform;
 	private int serialNo;

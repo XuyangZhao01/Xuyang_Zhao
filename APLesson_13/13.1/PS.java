@@ -1,11 +1,11 @@
-public class PlayStation extends Console
+public class PS extends Console
 {
-	public PlayStation()
+	public PS()
 	{
 		super();
 	}
 	
-	public PlayStation(String x)
+	public PS(String x)
 	{
 		super(x);
 	}
@@ -17,6 +17,6 @@ public class PlayStation extends Console
 	
 	public String getPlatform()
 	{
-		return "PlayStation";
+		return "PS";
 	}
 }
